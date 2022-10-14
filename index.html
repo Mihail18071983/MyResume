@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>MY Resume</title>
+    
   </head>
   <body>
     <!--Main-->
@@ -27,9 +28,8 @@
       <!--about user-->
       <section class="section about">
         <h2 class="about-position">JUNIOR FRONT-END DEVELOPER</h2>
-
         <h1 class="about-name">Mihailo Kapelushnik</h1>
-        <h3 class="title">SUMMARY</h3>
+        <h2 class="title">SUMMARY</h2>
 
         <p class="about-description">
           I am a Junior Front-End developer. I focus on HTML5, CSS3, JS. English
@@ -61,24 +61,26 @@
               >IceCream</a
             >
             <p class="project-description">
-              Ice
-              Cream company site. Neat and tasty design, responsible layout.
-              Using Parcel, SCSS, JS.
-              This project was designed by team. My role in project was - developer. I made header and mobile menu.
+              Ice Cream company site. Neat and tasty design, responsible layout.
+              Using Parcel, SCSS, JS. This project was designed by team. My role
+              in project was - developer. I made header and mobile menu.
             </p>
           </li>
         </ul>
       </section>
       <!--work-->
       <section class="section work">
-        <h2 class="title">Work experience</h2>
+        <h2 class="title work-experience-title">Work experience</h2>
         <div class="work-wrapper">
-          <p class="work-position">Еlectrical engineer-designer of buildings and structures</p>
+          <p class="work-position">
+            Еlectrical engineer-designer of buildings and structures
+          </p>
           <p class="organization">Debora-Electro LLC</p>
           <p class="period">
-            Dec 2011 - Fab 2022 <span class="line">| </span> Ukraine
+            Dec 2011 - Feb 2022 <span class="line">| </span> Ukraine
           </p>
-          </div>
+        </div>
+        <div class="responsibilities-wrapper">
           <h3 class="work-list-title">Responsibilities:</h3>
           <ul class="work-list">
             <li class="work-list-item">
@@ -87,16 +89,22 @@
             <li class="work-list-item">Electrical equipment design.</li>
             <li class="work-list-item">Technical inspection of objects.</li>
           </ul>
-       
+        </div>
       </section>
       <!--Education-->
       <section class="section education">
         <h2 class="title">Education</h2>
-        <p class="High-scholl">National mining University</p>
+        <p class="high-scholl">National mining University</p>
         <p class="Spaciality">Electrical engineer</p>
-        <p class="Data">
+        <p class="data">
           September 2001 - June 2006 <span class="line">|</span> Ukraine
         </p>
+      </section>
+      <section class="section add-education">
+        <h2 class="title">Additional education</h2>
+        <p class="high-scholl">IT School GoIT</p>
+        <p class="Spaciality">Full stack developer</p>
+        <p class="data">June 2022 - p.t. <span class="line">|</span> Ukraine</p>
       </section>
     </main>
     <!--sіdebar-->
@@ -105,18 +113,30 @@
       <!--Contacts-->
       <section class="section contacts">
         <h2 class="sidebar-title">Contacts</h2>
-        <div>
-          <p>
-            <span class="contact-type">C:</span>
-            <a href="tel:+380988282800" class="contact-link">+380988282800</a>
-          </p>
-          <p>
-            <span class="contact-type">E:</span>
-            <a href="mailto:michle12345@ukr.net" class="contact-link"
-              >michle12345@ukr.net</a
-            >
-          </p>
-        </div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <a href="tel:+380988282800" class="contact-link"
+              >+380988282800
+              <svg class="icon-phone">
+                <use href="./image/svg/icons.svg#smartphone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-item">
+            <a href="mailto:michle12345@ukr.net" class="contact-link">michle12345@ukr.net
+              <svg class="icon-mail">
+                <use href="./image/svg/icons.svg#envelope"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-item">
+            <a href="https://github.com/Mihail18071983" class="contact-link">github page
+              <svg class="icon-githab">
+                <use href="./image/svg/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>    
       </section>
       <!--Tech skills-->
       <section class="section tech-skills">
@@ -129,7 +149,7 @@
             <p class="tech-skills-text">CSS</p>
           </li>
           <li class="tech-skills-item">
-            <sp class="tech-skills-text">SASS</sp>
+            <span class="tech-skills-text">SASS</span>
           </li>
           <li class="tech-skills-item">
             <p class="tech-skills-text">GIT</p>
@@ -147,16 +167,19 @@
         <h3 class="sidebar-title">Soft skills</h3>
         <ul class="soft-skills-list">
           <li class="soft-skills-item">
-            <span class="soft-skills-text">Scrum</span>
+            <p class="soft-skills-text">Accurate</p>
           </li>
           <li class="soft-skills-item">
-            <span class="soft-skills-text">Agile</span>
+            <p class="soft-skills-text">Committed</p>
           </li>
           <li class="soft-skills-item">
-            <span class="soft-skills-text">GTD</span>
+            <p class="soft-skills-text">Cooperative</p>
           </li>
           <li class="soft-skills-item">
-            <span class="soft-skills-text">Teamwork</span>
+            <p class="soft-skills-text">Willingness to learn</p>
+          </li>
+          <li class="soft-skills-item">
+            <p class="soft-skills-text">Teamwork</p>
           </li>
         </ul>
       </section>

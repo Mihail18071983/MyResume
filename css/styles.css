@@ -45,12 +45,6 @@ body {
 }
 /* main styles */
 
-.project-title {
-  font-size: 22px;
-  color: blue;
-  margin-left: 90px;
-}
-
 .project-link {
   font-style: normal;
   font-weight: 500;
@@ -73,11 +67,9 @@ body {
   padding-top: 30px;
 }
 
-
 .about-position {
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   color: #000000;
   margin-bottom: 20px;
@@ -90,7 +82,6 @@ body {
   color: #000000;
   margin-bottom: 20px;
 }
-
 
 .about-description {
   font-style: normal;
@@ -159,7 +150,12 @@ body {
 /* work styles */
 .work {
   /* margin-left: 90px; */
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
+  padding-bottom: 50px;
+}
+
+.title.work-experience-title {
+  margin-bottom: 20px;
 }
 
 .work-wrapper {
@@ -168,7 +164,7 @@ body {
 
 .work-position {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -177,10 +173,10 @@ body {
 
 .organization {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #fb6d3a;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -194,15 +190,19 @@ body {
 }
 
 .line {
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.2;
   color: #000000;
 }
 
+.work-list-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .work-list-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -226,6 +226,7 @@ body {
 /* education styles */
 .education {
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .title {
@@ -237,30 +238,34 @@ body {
   margin-bottom: 10px;
 }
 
-.High-scholl {
+.high-scholl {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
-  color: #fb6d3a;
+  line-height: 1.2;
+  color: #000;
   margin-bottom: 10px;
 }
 
 .Spaciality {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.2;
   color: #000000;
   margin-bottom: 10px;
 }
-.Data {
+.data {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.2;
   color: #a8a8a8;
+}
+
+.add-education {
+  padding-bottom: 50px;
 }
 /* sidebar styles */
 .sidebar {
@@ -285,22 +290,45 @@ body {
   margin-right: 15px;
 }
 .contact-link {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #565e6a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: #ffffff;
+  order: -1;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: #ffffff;
+  order: -1;
+}
+
+.icon-githab {
+  width: 12px;
+  height: 12px;
+  fill: #ffffff;
+  order: -1;
+}
+
 .photo {
   width: 370px;
   margin-bottom: 50px;
 }
 .contacts {
-  margin-left: 40px;
   margin-bottom: 50px;
 }
 .tech-skills {
-  margin-left: 40px;
+  margin-bottom: 50px;
 }
 .tech-skills-list {
   color: white;
@@ -308,8 +336,20 @@ body {
   margin-left: 15px;
 }
 .tech-skills-item {
-  color: #fb6d3a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.tech-skills-item::before,
+.soft-skills-item::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fb6d3a;
+}
+
 .tech-skills-text {
   color: #ffffff;
   font-style: normal;
@@ -318,7 +358,7 @@ body {
   line-height: 24px;
 }
 .soft-skills {
-  margin-left: 40px;
+  margin-bottom: 50px;
 }
 .soft-skills-list {
   color: white;
@@ -326,8 +366,11 @@ body {
   margin-left: 15px;
 }
 .soft-skills-item {
-  color: #fb6d3a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
 .soft-skills-text {
   font-style: normal;
   font-weight: 400;
