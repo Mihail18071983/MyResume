@@ -220,7 +220,7 @@ body {
   height: 12px;
   background-position: center;
   background-size: contain;
-  background-image: url('/image/png/icon-check.png');
+  background-image: url('../image/png/icon-check.png');
 }
 
 /* education styles */
